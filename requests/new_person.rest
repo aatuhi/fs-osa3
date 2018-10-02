@@ -2,7 +2,7 @@ POST http://localhost:3001/api/persons
 content-type: application/json
 
 {
-    "name": "adsa",
-    "number": "234324234",
+    "name": "Aatu Hirvonen",
+    "number": "044-132131",
     "id": 0
 }
