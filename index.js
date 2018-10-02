@@ -11,10 +11,11 @@ morgan.token('data', function getData(request) {
 app.use(bodyParser.json())
 app.use(morgan(':method :url :data :status :res[content-length] - :response-time ms'))
 app.use(cors())
+app.use(express.static('build'))
 
 console.log('Hello world')
 
-// 'visible'-attribuutti lis'tyy kyseenalaisen hakutoiminnon implementaation takia
+// 'visible'-attribuutti lisätty kyseenalaisen hakutoiminnon implementaation takia
 let persons = [
   {
     name: 'Arto Hellas',
