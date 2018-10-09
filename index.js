@@ -15,31 +15,26 @@ app.use(express.static('build'))
 
 console.log('Hello world')
 
-// 'visible'-attribuutti lisätty kyseenalaisen hakutoiminnon implementaation takia
 let persons = [
   {
     name: 'Arto Hellas',
     number: '040-123456',
-    id: 1,
-    visible: true
+    id: 1
   },
   {
     name: 'Martti Tienari',
     number: '040-123456',
-    id: 2,
-    visible: true
+    id: 2
   },
   {
     name: 'Arto Järvinen',
     number: '040-123456',
-    id: 3,
-    visible: true
+    id: 3
   },
   {
     name: 'Lea Kutvonen',
     number: '040-123456',
-    id: 4,
-    visible: true
+    id: 4
   }
 ]
 
