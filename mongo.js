@@ -1,7 +1,11 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 
-// korvaa url oman tietokantasi urlilla. ethän laita salasanaa Githubiin!
-const url = 'mongodb://arthur:sensei1@ds123513.mlab.com:23513/puhelinluettelo'
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
+
+const url = process.env.MONGODB_URI
 
 mongoose.connect(url)
 
